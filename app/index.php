@@ -3,6 +3,9 @@ require_once 'vendor/autoload.php';
 
 use MaxMind\Db\Reader;
 
+/**
+ * @see https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=en
+ */
 $databaseFile = 'GeoLite2-Country.mmdb';
 
 $ipAddress = isset($_SERVER['HTTP_CLIENT_IP'])
